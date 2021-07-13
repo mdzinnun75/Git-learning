@@ -1,0 +1,14 @@
+#to add a new file:
+	git add License.txt notes.txt
+	>>these files will be added to staging area & will appear in git bash in green colored
+
+#to add all files of a certain format:
+		git add *.java
+		>>this adds every .java(extension) file resides in this directory
+
+# short view of git status:
+	git status -s
+	
+# to add all files:
+	git add .
+	>>here (.) means all possible names & extensions
