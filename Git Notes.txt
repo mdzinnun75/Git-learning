@@ -42,3 +42,24 @@
 	git rm -r --cached bin/
 	--> deleting directory from staging area but keep that file in directory
 	
+# creating a git ignore file:
+	touch .gitignore
+	--> git ignore for different languages https://github.com/github/gitignore
+	
+# opening gitignore file using git bash:
+	nano .gitignore 
+	--> nano is a text editor for the Unix like computer system
+	
+# to check git commit history:
+	git log
+	--> checks the commit history
+	
+# limit the number of commit:
+	git log -3
+	--> it'll show last 3 commits
+	
+# to check commit message & cheksum:
+	git log --pretty=oneline
+	
+	
+	
