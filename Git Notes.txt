@@ -61,5 +61,14 @@
 # to check commit message & cheksum:
 	git log --pretty=oneline
 	
+# to remove last commmit:
+		git commit --amend 
+		--> a text editor must be set as default 
+
+# to delete a global default from default config:
+	git config --global --unset core.editor
+	
+# if it has more than one config for one varibale:
+	git config --global --unset-all core.editor
 	
 	
