@@ -55,20 +55,63 @@
 	--> checks the commit history
 	
 # limit the number of commit:
-	git log -3
-	--> it'll show last 3 commits
+	$ git log -3
+	 --> it'll show last 3 commits
 	
 # to check commit message & cheksum:
-	git log --pretty=oneline
+	$ git log --pretty=oneline
 	
 # to remove last commmit:
-		git commit --amend 
-		--> a text editor must be set as default 
+	$ git commit --amend 
+	--> a text editor must be set as default 
 
 # to delete a global default from default config:
-	git config --global --unset core.editor
+	$ git config --global --unset core.editor
+	--> here core.editor could be anything
 	
 # if it has more than one config for one varibale:
 	git config --global --unset-all core.editor
+	--> here core.editor could be anything.
+	
+# do a commit but with previous commit message:
+	$ git commit --amend --no-edit
+	--> but it will change the checksum, every commit has a unique checksum
+
+# unstage an already stagged file:
+	$ git restore --staged FILENAME
+
+# restore a change in file from git:
+	$ git restore FILENAME
+	
+# to check local repository is connected to a remote repository:
+	$ git remote -varibale
+	
+# adding a local repo to a remote repo:
+	$ git remote add origin https://github.com/mdzinnun75/Git-learning.git
+	
+# pushing local repo to that remote repo:
+	$  git push origin -u master
+	
+# cloning a remote repo to local machine:
+	$ git clone https://github.com/mdzinnun75/mysql.git
+	--> it'll download the remote repo to local machine with a .git folder
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
