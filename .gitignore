@@ -1,7 +1,11 @@
 *.class
 bin
 .classpath
+<<<<<<< HEAD
 git-notes.txt
+=======
+Git Notes.txt
+>>>>>>> f93b997de484a2ecce12ae96fb4a04da41ae4bfe
 cloning a remote repo to local
 
 
