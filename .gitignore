@@ -6,12 +6,15 @@ git-notes.txt
 =======
 Git Notes.txt
 >>>>>>> f93b997de484a2ecce12ae96fb4a04da41ae4bfe
+<<<<<<< HEAD
 
 # Git added some syntax including seven "less than" characters, 
 # <<<<<<< and seven "greater than" characters, >>>>>>>, 
 # separated by seven equal signs, =======. These can be searched using
 # editor to quickly find where edits need to be made.
 
+=======
+>>>>>>> 54bed3c9268ff4291e9a93d26e6dfb6237061958
 cloning a remote repo to local
 
 
