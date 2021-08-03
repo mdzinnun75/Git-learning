@@ -1,7 +1,17 @@
 *.class
 bin
 .classpath
+<<<<<<< HEAD
 git-notes.txt
+=======
+Git Notes.txt
+>>>>>>> f93b997de484a2ecce12ae96fb4a04da41ae4bfe
+
+# Git added some syntax including seven "less than" characters, 
+# <<<<<<< and seven "greater than" characters, >>>>>>>, 
+# separated by seven equal signs, =======. These can be searched using
+# editor to quickly find where edits need to be made.
+
 cloning a remote repo to local
 
 
