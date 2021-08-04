@@ -1,0 +1,160 @@
+==================
+|| Git Commands ||
+==================
+
+#to add a new file:
+```````````````````
+	git add License.txt notes.txt
+	-->these files will be added to staging area & will appear in git bash in green colored
+
+#to add all files of a certain format:
+``````````````````````````````````````
+		git add *.java
+		--> this adds every .java(extension) file resides in this directory
+
+# short view of git status:
+```````````````````````````
+	git status -s
+	
+# to add all files:
+``````````````````
+	git add .
+	-->here (.) means all possible names & extensions
+
+# write a commit message:
+`````````````````````````
+	git commit -m "message"
+
+# get shortcut of a command:
+````````````````````````````
+	git status --help	or,
+	git status -h
+	
+# commit changes using one command line:
+````````````````````````````````````````
+	git commit -a -m "commit message"
+	
+# removing file from staging area:
+	git rm --cached .classpath
+	--> deleting file from staging area but keep that file in directory
+	
+# removing directory from staging area:
+	git rm -r --cached bin/
+	--> deleting directory from staging area but keep that file in directory
+	
+# creating a git ignore file:
+	touch .gitignore
+	--> git ignore for different languages https://github.com/github/gitignore
+	--> https://stackoverflow.com/questions/4308610/git-how-to-ignore-certain-files-in-git
+	
+# opening gitignore file using git bash:
+	nano .gitignore 
+	--> nano is a text editor for the Unix like computer system
+	
+# to check git commit history:
+	git log
+	--> checks the commit history
+	
+# limit the number of commit:
+	$ git log -3
+	 --> it'll show last 3 commits
+	
+# to check commit message & cheksum:
+	$ git log --pretty=oneline
+	
+# to remove last commmit:
+	$ git commit --amend 
+	--> a text editor must be set as default 
+
+# do a commit but with previous commit message:
+	$ git commit --amend --no-edit
+	--> but it will change the checksum, every commit has a unique checksum
+
+# to delete a global default from default config:
+	$ git config --global --unset core.editor
+	--> here core.editor could be anything
+	
+# if it has more than one config for one varibale:
+	git config --global --unset-all core.editor
+	--> here core.editor could be anything.
+	
+
+# unstage an already stagged file:
+	$ git restore --staged FILENAME
+
+# restore a change in file from git:
+	$ git restore FILENAME
+	
+# to check local repository is connected to a remote repository:
+	$ git remote -variabale
+	
+# adding a local repo to a remote repo:
+	$ git remote add origin https://github.com/mdzinnun75/Git-learning.git
+	
+# pushing local repo to that remote repo:
+	$  git push origin -u master
+	
+# cloning a remote repo to local machine:
+	$ git clone https://github.com/mdzinnun75/mysql.git
+	--> it'll download the remote repo to local machine with a .git folder
+	
+# setting a SSH key in git:
+	$ git remote set-url origin git@github.com:mdzinnun75/Git-learning.git
+	--> this url is in evrey repository after setting a OpenSSH Public Key from local machine
+	
+	
+================================================================================================================
+Branching ||
+============
+
+# creating a branch:
+	$ git branch TA0001
+	
+# show local branches:
+	$ git branch
+	
+# check remote repository branches:
+	$ git branch -r
+
+# show all the branches:
+	$ git branch -a
+	
+# jump to another existing branch:
+	$ git branch TA0001       or,
+	$ git switch TA0001
+
+# create a branch & jump to it:
+	$ git checkout -b TA0001_discount_calculation     or,
+	$ git switch -c TA0001_discount_calculation
+	-> it'll create a new branch & jumps to it.
+	
+# check commits of a certain branch:
+	$ git log TA0001
+	
+# jump to a particular commit:
+	$ git checkout cfe51
+	-> here, cfe51 is the first five letters of its checksum.
+	
+# push to a different branch:
+	$ git push origin -u TA0001
+
+# deleting a branch:
+	$ git branch -d TA0001
+	
+# deleting a branch from remote repository:
+	$ git push origin --delete TA0001
+	
+# 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
